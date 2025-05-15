@@ -1,0 +1,230 @@
+:root{
+    --color-fondo: white;
+    --color-cuadros: #62884c;
+    --color-cuadros-hover: #96be68;
+    --color-verdeOscuro: #096266;
+    --color-fondoVerde: #739899;
+    --color-rosaClaro:#D0B9BA;
+}
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color: gray;
+    top: 0;
+    margin: 0;
+}
+H1{
+    color: black;
+    font-size: 600%;
+    text-shadow: 0 0 10px gray,
+                0 0 20px gray,
+                0 0 40px gray,
+                0 0 80px gray;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    height: 100%;  
+    width: 10vw;  
+    position: fixed; /* Fija la barra en el lado de la página */  
+    top: 0;  
+    left: 0;  
+    background-color: black;  
+    padding: 15px; 
+    justify-content: space-around;
+    border-right: 2px solid black;
+}
+.encabezado>a{
+    text-align: center;
+    width: 10vw;
+    color: white;
+    text-decoration: none;
+    border-radius: 10%;
+    padding-top:2vh;
+    padding-bottom: 2vh;
+}
+
+.encabezado>a:hover{
+    background-color: white;  
+    color: black;
+    transition: 0.4s ease-in-out;
+}
+.encabezado>a>h2{
+    font-size: 2.8vh;
+}
+#imginicial{
+    width: 10vw;
+    border-radius: 50%;
+}
+
+
+
+#contenido{
+    padding-left: 12vw;
+    align-items: center;
+    top:0;
+}
+
+
+
+#presentacion{
+    display: flex;
+    justify-content: space-between;
+    width:87.5vw;
+    top: 0;
+    background-image: url('imagenes/salon-sable.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+    align-items: center;
+}
+#presentacion>button{
+    margin: 1vw;
+    height: 7vh;
+    border-radius: 50%;
+    width: 7vh;
+    color:white;
+    background-color: lightgray;
+    border: none;
+}
+#presentacion>h1{
+    width: 60vw;
+    color:white;
+    text-shadow: none;
+    text-shadow:
+    -2px -2px 0 black,
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
+    text-align: center;
+    margin:auto;
+}
+
+
+
+
+#informacion{
+    display: flex;
+    flex-direction: row;
+    font-size:4vh;
+}
+#explicacion{
+    width: 65vw;
+    background-color: var(--color-cuadros);
+    margin: 1vw;
+    border: 0.4vw solid black;
+    text-align: center;
+    padding: 2vw;
+}
+#horarios{
+    display: flex;
+    width: 20vw;
+    background-color: var(--color-cuadros);
+    margin:1vw;
+    border: 0.4vw solid black;
+    padding:1vw;
+    align-items: center;
+}
+
+
+
+fieldset{
+    display:flex;
+    flex-direction: column;
+    width: 60vw;
+    margin:auto;
+    background-color: var(--color-cuadros);
+    border: 0.4vw solid black;
+    gap:0.2vw;
+    text-align: center;
+    padding: 2vw;
+    font-size: 4vh;
+    align-items: center;
+}
+input{
+    height:5vh;
+}
+select{
+    height:5vh;
+}
+
+
+
+        .form-section {
+        padding: 40px 20px;
+        max-width: 600px;
+        margin: 0 auto;
+        }
+    
+        .form-container {
+        background-color: #62884c;
+        border: 3px solid black;
+        border-radius: 12px;
+        padding: 30px 25px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        }
+    
+        .language-selector {
+        margin-bottom: 20px;
+        text-align: right;
+        }
+    
+        .language-selector label {
+        margin-right: 8px;
+        font-weight: bold;
+        }
+    
+        .language-selector select {
+        padding: 6px 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        color: #000;
+        background-color: #fff;
+        }
+    
+        label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 600;
+        color: white;
+        }
+    
+        input, select {
+        width: 100%;
+        padding: 10px 12px;
+        margin-bottom: 20px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 15px;
+        }
+    
+        button {
+        width: 100%;
+        padding: 12px;
+        background-color: white;
+        color: #62884c;
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        }
+    
+        button:hover {
+        background-color: #e6e6e6;
+        }

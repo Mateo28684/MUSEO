@@ -1,0 +1,397 @@
+:root{
+    --color-fondo: white;
+    --color-cuadros: #62884c;
+    --color-cuadros-hover: #96be68;
+}
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color: rgb(141, 202, 202);
+    top: 0;
+    margin: 0;
+}
+H1{
+    color: black;
+    font-size: 600%;
+    text-shadow: 0 0 10px white,
+                0 0 20px white,
+                0 0 40px white,
+                0 0 80px white;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    height: 100%;  
+    width: 10vw;  
+    position: fixed; /* Fija la barra en el lado de la página */
+    top: 0;  
+    left: 0;  
+    background-color: black;  
+    padding: 15px; 
+    justify-content: space-around;
+    border-right: 2px solid black;
+}
+.encabezado>a{
+    text-align: center;
+    width: 10vw;
+    color: white;
+    text-decoration: none;
+    border-radius: 10%;
+    padding-top:2vh;
+    padding-bottom: 2vh;
+}
+.encabezado>a:hover{
+    background-color: white;  
+    color: black;
+    transition: 0.4s ease-in-out;
+}
+.encabezado>a>h2{
+    font-size: 2.8vh;
+}
+#imginicial{
+    width: 10vw;
+    border-radius: 50%;
+}
+
+
+
+#contenido{
+    padding-left: 12vw;
+    align-items: center;
+}
+
+
+
+#presentacion{
+    display: flex;
+    justify-content: space-between;
+    width:87.5vw;
+    top: 0;
+    background-image: url('imagenes/salon-sable.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+    align-items: center;
+}
+#presentacion>button{
+    margin: 1vw;
+    height: 7vh;
+    border-radius: 50%;
+    width: 7vh;
+    color:white;
+    background-color: lightgray;
+    border: none;
+}
+#presentacion>h1{
+    width: 70vw;
+    color:white;
+    text-shadow: none;
+    text-shadow:
+    -2px -2px 0 black,
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
+}
+
+
+
+
+
+
+
+
+
+#Visitas{
+    text-align: center;    
+}
+
+#Visitas>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top:2vh;
+}
+#Visitas>div>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.SeccionVisitas{
+    transition: 0.6s ease-in-out;
+    width: 26vw;
+    height: 30vh;
+    background-color:  var(--color-cuadros);
+    border: 5px groove black;
+    margin:3vh;
+    padding:1%;
+    background-size: cover;
+    color:transparent;
+    background-position: center;
+}
+#Independencia{
+    background-image: url("imagenes/salon-sable.jpg");  
+}
+#Independencia:hover{
+    background-image: none;
+    color:black;
+}
+#colonial{
+    background-image: url("imagenes/tintero.jpeg");
+}
+#colonial:hover{
+    background-image: none;
+    color:black;
+}
+#rosismo{
+    background-image: url("imagenes/rosas.jpg");
+}
+#rosismo:hover{
+    background-image: none;
+    color:black;
+}
+#inmigracion{
+    background-image: url("imagenes/inmigrantes.jpeg");
+}
+#inmigracion:hover{
+    background-image: none;
+    color:black;
+}
+#arte{
+    background-image: url("imagenes/arte.JPG");
+}
+#arte:hover{
+    background-image: none;
+    color:black;
+}
+
+
+.SeccionVisitas:hover{
+    transition: 0.6s ease-in-out;
+    transform: scale(1.12);
+    background-color:  var(--color-cuadros-hover);
+    color:black;
+    background-image: none;
+}
+.TituloSeccionVisitas{
+    height:22vh;
+}
+.TituloSeccionVisitas>h2{
+    font-size: 6vh;
+}
+.InfoSeccionVisitas{
+    height:22vh;
+}
+.InfoSeccionVisitas>p{
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.HorariosSeccionVisitas{
+    height:50%;
+}
+.HorariosSeccionVisitas>ul>li{
+    font-size: 3vh;
+    margin:2%;
+}
+.HorariosSeccionVisitas>ul>li::marker{
+    content: "➤ ";
+}
+
+
+
+#ubicación a{
+    font-size: 180%;
+    text-decoration: none;
+    color: black;
+}
+#ubicación a:hover{
+    text-decoration: underline;
+}
+#ubicación{
+    width:60vw;
+    margin:auto;
+    background-color: var(--color-cuadros);
+    padding: 2vh;
+}
+#ubicación:hover{
+    background-color: var(--color-cuadros-hover);
+}
+#ubicación>div{
+    margin: auto;
+}
+#planos{
+    padding: 2vh;
+    background-image: url(imagenes/plano-museo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30vw;
+    height: 42vw;
+}
+.cuadro{
+    position: relative;
+    width: 4.02vw;
+    height: 4.02vw;
+    padding: 0;
+    margin: 0;
+}
+.cuadro:hover{
+    background-color: aquamarine;
+}
+.uno:hover + .dos {
+    background: aquamarine;
+}
+#info{
+    width: 15vw;
+    height: 60vw;
+    background-color: rgba(0 0 0/0.2%);
+    border-radius: 5%;
+}
+#info img{
+    width:100%;
+    height: 25%;
+}
+#info p{
+    font-size: 2vw;
+}
+#zona-planos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #96be68;
+}
+#zona1-pasillo{
+    right: -1.6vw;
+    bottom: 0.09vw;
+    width: 4.02vw;
+    height: 42.7vw;
+}
+#zona1-final{
+    bottom: 6.42vw;
+    right: -5.5vw;
+    width: 5.8vw;
+    height: 6.3vw;
+}
+#zona2{
+    right: -6.1vw;
+    top: -31.45vw;
+    width: 6.8vw;
+    height: 9.15vw;
+}
+#zona3{
+    right: -6.1vw;
+    top: -31vw;
+    width: 9.3vw;
+    height: 8.67vw;
+}
+#zona4{
+    right: -15.85vw;
+    bottom: 39.7vw;
+    width: 6.2vw;
+    height: 8.7vw;
+}
+#zona5{
+    right: -6.1vw;
+    bottom: 75.7vw;
+    width: 15.8vw;
+    height: 4.05vw;
+}
+
+
+#SeccionInformacion>p{
+    font-size: 180%;
+    margin:5%;
+}
+#SeccionInformacion{
+    transition: 0.6s ease-in-out;
+    width: 60%;
+    background-color:  var(--color-cuadros-hover);
+    border: 5px groove var(--color-cuadros);
+    color:black;
+    margin: auto;
+}
+#SeccionInformacion:hover{
+    transition: 0.6s ease-in-out;
+    transform: scale(1.15);
+}
+
+
+
+#Obras{
+    display: flex;
+    flex-direction: column;
+}
+#Obras>div{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#Obras>div>div{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 35vw;
+    margin-bottom: 5%;
+    transition: 0.6s ease-in-out;
+    background-color:  var(--color-cuadros);
+    border: 5px groove black;
+    color:black;
+    margin:3vh;
+    padding: 2%;
+    font-size: 2.2vh;
+}
+#Obras>div>div:hover{
+    transition: 0.6s ease-in-out;
+    transform: scale(1.05);
+    background-color: var(--color-cuadros-hover);
+}
+#Obras>div>div>img {
+    height:50%;
+
+}
+#Obras>div>h2 {
+    font-size: 400%;
+}
+#Obras>div>div>h2 {
+    color: black;
+    text-align: center;
+    font-size: 4.5vh;
+}
+#Obras>div>div>p {
+    color: black;
+    font-size: 150%;
+    text-align: center;
+}
+#Obras>div>div>ul>li{
+    color: black;
+    font-size: 150%;
+}
+
+
+
+#footer{
+    padding-left:13vw;
+    width: 87vw;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+    background-color: var(--color-cuadros);
+    text-align: center;
+}
+#footer>div{
+    margin: auto;
+    width: 40vw;
+}
+#footer a:hover{
+    text-decoration:underline;
+}

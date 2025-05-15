@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Visitas.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo</title>   
+</head>
+<body bgcolor="black">
+    <div class="encabezado">
+        <img id="imginicial" src="imagenes\logo.jpg" alt="logo del museo histórico nacional"></img>
+        <a HREF = "Museo.html">
+            <h2>Página principal</h2>
+        </a>
+        <a href="Independencia.html">
+            <h2>Siguiente página</h2>
+        </a>
+        <a href="#Programar">
+            <h2>Programar visita</h2>
+        </a>
+    </div>
+    <div id="contenido">
+        <div id = "presentacion" style="background-image: url(imagenes/arte.JPG);">
+            <H1>Arte y cultura del siglo XIX</H1>
+        </div>
+        <div id="informacion">
+            <div id="explicacion">
+                <p>En este recorrido verás obras de arte de pintores históricos como Cándido López, que documentó la Guerra del Paraguay.</p>
+                <p>El siglo XIX fue una época de importantes cambios en el arte y la cultura nacional, reflejando el proceso de independencia y la consolidación de la identidad nacional</p>
+                </div>
+            <fieldset id="horarios">
+                <legend>Horarios</legend>
+                <ul>
+                    <li>
+                        <strong>Lunes 12:</strong> 5am a 2pm.
+                    </li>
+                    <li>
+                        <strong>Jueves 21:</strong> 1pm a 3pm.
+                    </li>
+                    <li>
+                        <strong>Viernes 31:</strong> 7:30am a 9:30am.
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
+        <section class="form-section">
+            <div class="form-container">
+            <div class="language-selector">
+                <label for="language">🌐 Idioma:</label>
+                <select id="language" onchange="updateForm()">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+                <option value="pt">Português</option>
+                <option value="zh">中文</option>
+                </select>
+            </div>
+        
+            <form id="visitor-form">
+                <label for="firstName" id="label-firstName">Nombre:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Ingresa tu nombre">
+        
+                <label for="lastName" id="label-lastName">Apellido:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Ingresa tu apellido">
+        
+                <label for="visitors" id="label-visitors">Cantidad de visitantes:</label>
+                <input type="number" id="visitors" name="visitors" placeholder="Ej: 2">
+        
+                <label for="date" id="label-date">Fecha de preferencia:</label>
+                <input type="date" id="date" name="date">
+        
+                <button type="submit" id="submit-button">Enviar</button>
+            </form>
+            </div>
+        </section>
+
+
+    </div>
+    <script src="visitas.js"></script>
+</body>
+</html>

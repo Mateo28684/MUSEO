@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Visitas.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo</title>   
+</head>
+<body bgcolor="black">
+    <div class="encabezado">
+        <img id="imginicial" src="imagenes\logo.jpg" alt="logo del museo histórico nacional"></img>
+        <a HREF = "Museo.html">
+            <h2>Página principal</h2>
+        </a>
+        <a href="Colonial.html">
+            <h2>Siguiente página</h2>
+        </a>
+        <a href="#Programar">
+            <h2>Programar visita</h2>
+        </a>
+    </div>
+    <div id="contenido">
+        <div id = "presentacion">
+            <H1>Independencia y guerras de liberación</H1>
+        </div>
+        <div id="informacion">
+            <div id="explicacion">
+                <p>En este recorrido verás objetos pertenecientes a los próceres argentinos, como sables, uniformes y documentos.</p>
+                <p>La lucha por la independencia en Argentina comenzó con la Revolución de Mayo en 1810, cuando se formó el primer gobierno patrio en Buenos Aires.</p>
+                <p>Este movimiento fue un catalizador para el movimiento independentista en la región.</p>
+                <p>A lo largo de la década de 1810 las fuerzas revolucionarias lucharon contra las tropas independentistas en diversas batallas, hasta que finalmente en 1816 se declaró la independencia de las Provincias Unidas Del Río de La Plata.</p>
+            </div>
+            <fieldset id="horarios">
+                <legend>Horarios</legend>
+                <ul>
+                    <li>
+                        <strong>Viernes 24:</strong> 2pm a 4pm.
+                    </li>
+                    <li>
+                        <strong>Miercoles 30:</strong> 1pm a 3am.
+                    </li>
+                    <li>
+                        <strong>Martes 1:</strong> 12pm a 2pm.
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
+        <section class="form-section">
+            <div class="form-container">
+            <div class="language-selector">
+                <label for="language">🌐 Idioma:</label>
+                <select id="language" onchange="updateForm()">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+                <option value="pt">Português</option>
+                <option value="zh">中文</option>
+                </select>
+            </div>
+        
+            <form id="visitor-form">
+                <label for="firstName" id="label-firstName">Nombre:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Ingresa tu nombre">
+        
+                <label for="lastName" id="label-lastName">Apellido:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Ingresa tu apellido">
+        
+                <label for="visitors" id="label-visitors">Cantidad de visitantes:</label>
+                <input type="number" id="visitors" name="visitors" placeholder="Ej: 2">
+        
+                <label for="date" id="label-date">Fecha de preferencia:</label>
+                <input type="date" id="date" name="date">
+        
+                <button type="submit" id="submit-button">Enviar</button>
+            </form>
+            </div>
+        </section>
+
+    </div>
+    <script src="visitas.js"></script>
+</body>
+</html>
+        

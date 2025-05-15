@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Visitas.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo</title>   
+</head>
+<body bgcolor="black">
+    <div class="encabezado">
+        <img id="imginicial" src="imagenes\logo.jpg" alt="logo del museo histórico nacional"></img>
+        <a HREF = "Museo.html">
+            <h2>Página principal</h2>
+        </a>
+        <a href="Arte.html">
+            <h2>Siguiente página</h2>
+        </a>
+        <a href="#Programar">
+            <h2>Programar visita</h2>
+        </a>
+    </div>
+    <div id="contenido">
+        <div id = "presentacion" style="background-image: url(imagenes/inmigrantes.jpeg);">
+            <H1>Inmigración y modernización</H1>
+        </div>
+        <div id="informacion">
+            <div id="explicacion">
+                <p> Relatos y objetos que reflejan la llegada de inmigrantes europeos a Argentina y la transformación del pais en el siglo XIX y principios del XX.</p>
+                <p> A fines del siglo XIX, Argentina vivió una gran ola de inmigración europea, que cambió radicalmente la sociedad, la economía y la cultura del país.</p>
+                <p> Los inmigrantes trajeron consigo sus tradiciones, costumbres y conocimientos, lo que enriqueció la vida cultural y social del país, además de impulsar la modernización.</p>
+            </div>
+            <fieldset id="horarios">
+                <legend>Horarios</legend>
+                <ul>
+                    <li>
+                        <strong>Jueves 22:</strong> 9am a 10:30am
+                    </li>
+                    <li>
+                        <strong>Miercoles 29:</strong> 12pm a 2pm.
+                    </li>
+                    <li>
+                        <strong>Sabado 7:</strong> 3pm a 5pm.
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
+        <section class="form-section">
+            <div class="form-container">
+            <div class="language-selector">
+                <label for="language">🌐 Idioma:</label>
+                <select id="language" onchange="updateForm()">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+                <option value="pt">Português</option>
+                <option value="zh">中文</option>
+                </select>
+            </div>
+        
+            <form id="visitor-form">
+                <label for="firstName" id="label-firstName">Nombre:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Ingresa tu nombre">
+        
+                <label for="lastName" id="label-lastName">Apellido:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Ingresa tu apellido">
+        
+                <label for="visitors" id="label-visitors">Cantidad de visitantes:</label>
+                <input type="number" id="visitors" name="visitors" placeholder="Ej: 2">
+        
+                <label for="date" id="label-date">Fecha de preferencia:</label>
+                <input type="date" id="date" name="date">
+        
+                <button type="submit" id="submit-button">Enviar</button>
+            </form>
+            </div>
+        </section>
+
+    </div>
+    <script src="visitas.js"></script>
+</body>
+</html>

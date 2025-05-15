@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Museo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo</title>   
+</head>
+<body bgcolor="black">
+    <div class="encabezado">
+        <img id="imginicial" src="imagenes\logo.jpg" alt="logo del museo histórico nacional"></img>
+        <a HREF = "#Visitas">
+            <h2>Visitas</h2>
+            
+        </a>
+        <a href="#Informacion">
+            <h2>Información</h2>
+        </a>
+        <a href="#Obras">
+            <h2>Exposiciones</h2>
+        </a>
+    </div>
+    <div id="contenido">
+        <div id = "presentacion">
+            <button ID="anterior" onclick="imagenAnterior()"><</button>
+            <H1>MUSEO HISTÓRICO NACIONAL</H1>
+            <button ID="siguiente" onclick="imagenSiguiente()">></button>
+        </div>
+        <div id = "Visitas">
+            <H1>VISITAS GUIADAS</H1>
+            <div>
+                <div>
+                    <a href="Independencia.html">
+                    <div class="SeccionVisitas" id="Independencia">
+                        <div class="TituloSeccionVisitas">
+                            <h2>Independencia y guerras de liberación</h2>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="Colonial.html">
+                    <div class="SeccionVisitas" id="colonial">
+                        <div class="TituloSeccionVisitas">
+                            <h2>Época colonial</h2>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="Rosismo.html">
+                    <div class="SeccionVisitas" id="rosismo">
+                        <div class="TituloSeccionVisitas">
+                            <h2>Rosismo y Confederación Argentina</h2>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="Inmigracion.html">
+                    <div class="SeccionVisitas"  id="inmigracion">
+                        <div class="TituloSeccionVisitas">
+                            <h2>Inmigración y Modernización</h2>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="Arte.html">
+                    <div class="SeccionVisitas" id="arte">
+                        <div class="TituloSeccionVisitas">
+                            <h2>Arte y Cultura del Siglo XIX</h2>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="ubicación">
+            <H1>UBICACIÓN</H1>
+            <div>
+                <h2>Estamos ubicados en: </h2>
+                <A href="https://maps.app.goo.gl/RwXp8BdUFu4dFJBA8?g_st=aw">Defensa 1600, C1143 Cdad. Autónoma de Buenos Aires</A>
+            </div>
+            <div id="zona-planos">
+                <div id="planos">
+                    <div id = "zona1-pasillo" class="cuadro uno" data-mensaje="Sala de tiempos de revolución"></div>
+                    <div id = "zona1-final" class="cuadro dos" data-mensaje="Sala de tiempos de revolución"></div>
+                    <div id = "zona2" class="cuadro" data-mensaje="Pintores de la historia"></div>
+                    <div id = "zona3" class="cuadro" data-mensaje="Tiempo de provincias"></div>
+                    <div id = "zona4" class="cuadro" data-mensaje="Grandes éxitos"></div>
+                    <div id = "zona5" class="cuadro" data-mensaje="Informes"></div>
+                </div>
+                <div id = "info">
+                    <p id = "pinfo"></p>
+                    <img id="img1" src="">
+                    <img id="img2" src="">
+                    <img id="img3" src="">
+                </div>
+            </div>
+        </div>
+        <div id="Informacion">
+            <h1>CONOCENOS</h1>
+            <div id="SeccionInformacion">
+                <p>El Museo Histórico Nacional propone un recorrido de la historia argentina, exhibe objetos, documentos y piezas artísticas. Se encuentra ubicado en el barrio de San Telmo​ en la Ciudad de Buenos Aires, Argentina. Su patrimonio incluye objetos relacionados con la historia prehispánica, la Revolución de Mayo, el Cruce de los Andes, la cultura de los pueblos originarios y varios episodios descriptivos de la historia del país.</p>
+                <p>El museo, en sus orígenes, fue llamado Museo Histórico de la Capital. Fue creado el 24 de mayo de 1889 por el Intendente Francisco Seeber, y se designó a Adolfo Carranza como su primer director, quien fue el propulsor para que se lleve a cabo su fundación.​ Aunque algunas versiones ubicaron la inauguración del Museo en febrero de 1891, estudios recientes señalaron que la inauguración oficial del museo fue en agosto de 1890 y que a esta le siguió una concurrida fiesta de inauguración en septiembre del mismo año.</p>
+            </div>
+        </div>
+        <div id="Expociciones">
+            <h1>EXPOSICIONES DESTACADAS</h1>
+            <div id="Obras">
+                <div>
+                    <div>
+                        <h2>Sable Corvo</h2>
+                        <img src="imagenes/sablecorvo.jpg" alt="Sable corvo"></img>
+                        <p>
+                            El sable corvo fue adquirido por San Martín en su estancia en Londres, poco después de dejar España y antes de embarcarse a Sudamérica. Más adelante, San Martín armaría a su Regimiento de Granaderos a Caballo con armas similares, ya que las consideraba ideales para los ataques de carga de caballería.
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Tarja Potosi</h2>
+                        <img src="imagenes/tarja-potosi.jpg" alt=""></img>
+                        <p>
+                            La Tarja de Potosí es una joya exhibida que se conserva en el Museo Histórico Nacional de la ciudad de Buenos Aires. Es una obra de arte única en su estilo, que fue obsequiada por las damas potosinas al General Belgrano en 1813 en agradecimiento por sus victorias frente a los realistas. Consiste en una artesanía de plata y oro, de grandes proporciones y de gran valor, tanto histórico como simbólico. 
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2>Tintero</h2>
+                        <img src="imagenes/tintero.jpeg"></img>
+                        <p>
+                            Es una copa de plata inglesa que se conserva en el Museo Histórico Nacional de Argentina.
+                            <ul>
+                                <li>Fue fabricado por Roberts, Cadman & Co. en Sheffield.</li>
+                                <li>Está hecho de plata con una aleación de cobre.</li>
+                                <li>Tiene dos frascos de vidrio azul, uno para la tinta y otro para la arenilla secante.</li>
+                                <li>Tiene orificios para plumas, instrumentos de corte y afilado, y abre carta.</li>
+                            </ul> 
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Morrión de San Martín</h2>
+                        <img src="imagenes/morrion-san-martin.png"></img>
+                        <p>
+                            El Morrión de San Martín era el casco distintivo de Regimiento de Granaderos a Caballo, creado por el general San Martín en 1812. Era un casco alto con un penacho bordó, la escarapela nacional, el escudo con la granada, cordones, galápagos,visera y carrilleras, diseñadas para la protección en combate. Este Morrión
+                            era un símbolo de valentía y disciplina para los granaderos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div>
+            <p>&copy; 2025 Museo Nacional de Historia. Todos los derechos reservados.</p>
+            <nav>
+                <a href="/contacto">Contacto</a> |
+                <a href="/accesibilidad">Accesibilidad</a> |
+                <a href="/privacidad">Política de privacidad</a>
+            </nav>
+        </div>
+    </footer>
+    <script src="Museo.js"></script>
+</body>
+</html>

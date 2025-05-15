@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Visitas.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo</title>   
+</head>
+<body bgcolor="black">
+    <div class="encabezado">
+        <img id="imginicial" src="imagenes\logo.jpg" alt="logo del museo histórico nacional"></img>
+        <a HREF = "Museo.html">
+            <h2>Página principal</h2>
+        </a>
+        <a href="Inmigracion.html">
+            <h2>Siguiente página</h2>
+        </a>
+        <a href="#Programar">
+            <h2>Programar visita</h2>
+        </a>
+    </div>
+    <div id="contenido">
+        <div id = "presentacion" id = "rosismo" style="background-image: url(imagenes/rosas.JPG);">
+            <H1>Rosismo y Confederación Argentina</H1>
+        </div>
+        <div id="informacion">
+            <div id="explicacion">
+                <p>En este recorrido verás piezas relacionadas con Juan Manuel de Rosas y la época de la confederación Argentina(1835-1852).</p>
+                <p>Rosas fue un líder de los federales, un grupo político que defendía la autonomía de las provincias frente al centralismo de Buenos Aires.</p>
+                <p>Durante su gobierno, Rosas consolidó un régimen autoritario en el que controlaba la política, la economía y la justicia. Implementó una serie de medidas para mantener el orden y la estabilidad, pero también utilizó la represión y la censura para silenciar a sus opositores.</p>
+            </div>
+            <fieldset id="horarios">
+                <legend>Horarios</legend>
+                <ul>
+                    <li>
+                        <strong>Jueves 27:</strong> 9am a 10:30am
+                    </li>
+                    <li>
+                        <strong>Miercoles 18:</strong> 12pm a 2pm.
+                    </li>
+                    <li>
+                        <strong>Sabado 14:</strong> 3pm a 5pm.
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
+        <section class="form-section">
+            <div class="form-container">
+            <div class="language-selector">
+                <label for="language">🌐 Idioma:</label>
+                <select id="language" onchange="updateForm()">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+                <option value="pt">Português</option>
+                <option value="zh">中文</option>
+                </select>
+            </div>
+        
+            <form id="visitor-form">
+                <label for="firstName" id="label-firstName">Nombre:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Ingresa tu nombre">
+        
+                <label for="lastName" id="label-lastName">Apellido:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Ingresa tu apellido">
+        
+                <label for="visitors" id="label-visitors">Cantidad de visitantes:</label>
+                <input type="number" id="visitors" name="visitors" placeholder="Ej: 2">
+        
+                <label for="date" id="label-date">Fecha de preferencia:</label>
+                <input type="date" id="date" name="date">
+        
+                <button type="submit" id="submit-button">Enviar</button>
+            </form>
+            </div>
+        </section>
+
+    </div>
+    <script src="visitas.js"></script>
+</body>
+</html>
